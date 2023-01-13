@@ -1,4 +1,6 @@
 
-# trilha-estudos-java-basico
-Rep de estudos e exercícios do curso de java basico pela DIO.me <br>
+## Rep para armazenar exercícios básicos de java do curso Orange Tech + da DIO <br>
+Acesse as pastas src/loops ou src/arrays para ver os exercícios.
+
 https://glysns.gitbook.io/java-basico/ 
+
