@@ -1,4 +1,5 @@
-## Rep para armazenar exercícios básicos de java do curso Orange Tech + da DIO
+## Rep para armazenar exercícios básicos de java do curso Orange Tech + da DIO <br>
+Acesse loops ou array para ver os exercícios.
 
 
 ## Getting Started
