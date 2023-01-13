@@ -1,5 +1,5 @@
 ## Rep para armazenar exercícios básicos de java do curso Orange Tech + da DIO <br>
-Acesse as pastas loops ou arrays para ver os exercícios.
+Acesse as pastas src/loops ou src/arrays para ver os exercícios.
 
 
 ## Getting Started
