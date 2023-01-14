@@ -31,5 +31,6 @@ public class MaiorEMedia {
         
         System.out.println("O maior número (nota) foi: " + maiorNum);
         System.out.println("Sua média foi: " + mediaAccumulator / 5);
+        scan.close();
     }
 }
