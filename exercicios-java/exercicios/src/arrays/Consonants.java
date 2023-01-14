@@ -1,9 +1,11 @@
 package arrays;
 /*
-Faça um Programa que leia um vetor de 6 caracteres,
-e diga quantas consoantes foram lidas.
-Imprima as consoantes.
-*/
+ * Faça um programa que leia um vetor de 6 caracteres,
+ * diga quantas consoantes foram lidas e as imprima.
+ * -----
+ * Make a program that read de array of 6 chars,
+ * tell how many consonants were found and print them.
+ */
 
 import java.util.Scanner;
 
