@@ -5,7 +5,7 @@ calcule e mostre a quantidade de números pares
 e a quantidade de números impares
 ------
 Make a program that ask for X int numbers,
-calculate and show the amout of even and odd numbers
+calculate and show the amount of even and odd numbers
 */
 
 package loops;
@@ -16,8 +16,8 @@ public class OddOrEven {
     public static void main(String[] args) {
        Scanner scan = new Scanner(System.in);
 
-        int quantNum; // amount of numbers that will be inserted by user
-        int numero; // current inserted number
+        int quantNum; //amount of numbers that will be inserted by user
+        int numero; //current inserted number
         int count = 0;
         int oddQuant = 0; //odd amount
         int evenQuant = 0; //even amount
@@ -37,7 +37,5 @@ public class OddOrEven {
         System.out.println("Odd amout: " + oddQuant);
 
         scan.close();
-
-
     }
 }
