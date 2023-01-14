@@ -11,7 +11,9 @@ import java.util.Scanner;
  -----
  while = laços infinitos e que terá um break.
  do while = executar uma vez antes de entrar nas condiçóes do while.
- for = loops, onde usamos countador .
+ for = loops, onde usamos countador.
+ -----
+ Praticar modo debugger.
  */
 
 public class Fatorial {
@@ -28,7 +30,7 @@ public class Fatorial {
             multiplier = multiplier * i;
         }
         System.out.println(fatorial + " != " + multiplier);
-        
+
         scan.close();
     }
 }
