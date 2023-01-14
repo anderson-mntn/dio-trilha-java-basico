@@ -12,6 +12,7 @@ import java.util.Scanner;
  while = laços infinitos e que terá um break.
  do while = executar uma vez antes de entrar nas condiçóes do while.
  for = loops, onde usamos countador.
+ forEach = nao nos dá acessa a posição específicada do elemento dentro do array.
  -----
  Praticar modo debugger.
  */
