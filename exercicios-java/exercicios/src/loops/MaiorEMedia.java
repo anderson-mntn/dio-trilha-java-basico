@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Faça um programa que leia 5 números
  * Informe o maior número
  * Informe as médias dos números
- * Usando o "do - while"
+ * Usando o "do - while" - mais ou menos como se fosse o if do js;
  */
 
 public class MaiorEMedia {
