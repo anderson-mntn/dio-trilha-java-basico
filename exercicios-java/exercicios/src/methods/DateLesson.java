@@ -35,6 +35,13 @@ public class DateLesson {
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     sout(sdf.format(data))
     */
+
+    //Formating date based on country:
+    //Locale USA = Locale.US;
+    //Locale italy =  Locale.ITALIAN;
+    //--
+    //DateFormatf2 = DateFormat.getGatInstance(DateFormat.FULL, brasil);
+    
     }
     
 }
