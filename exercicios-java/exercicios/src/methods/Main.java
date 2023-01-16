@@ -7,6 +7,7 @@ public class Main {
         Calculator.multiplication(7, 7);
         Calculator.division(365, 7);
 
+        DayMessage.getMessage(1);
 
     }   
 }
