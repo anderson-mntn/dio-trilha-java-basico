@@ -5,12 +5,12 @@ public class RodarAplicação {
         Car car1 = new Car();
         Car car2 = new Car();
 
+        // ---- Car 1 ----
         System.out.println("---- Car 1 ----");
         car1.setColor("Red"); //Setting color for blue
         car1.setModel("Mustang");
         car1.setGasCapacity(50);
-        
-
+    
         System.out.println("Car 1:");
         System.out.println(car1.getColor());
         System.out.println(car1.getModel());
