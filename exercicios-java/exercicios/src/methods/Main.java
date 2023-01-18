@@ -8,6 +8,15 @@ public class Main {
         Calculator.division(365, 7);
 
         DayMessage.getMessage(1);
+        DayMessage.getMessage(9);
+        DayMessage.getMessage(13);
+        DayMessage.getMessage(19);
 
+        //Overloading Lesson
+        System.out.println("Exercício quadrilátero");
+        Quadrilatero.area(3);
+        Quadrilatero.area(5d,5d);
+        Quadrilatero.area(7,8,9);
+        Quadrilatero.area(5f,5f);
     }   
 }
