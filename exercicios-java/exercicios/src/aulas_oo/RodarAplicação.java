@@ -23,9 +23,6 @@ public class RodarAplicação {
         System.out.println("---- Car 2 ----");
         System.out.println(car2.getColor());
         System.out.println(car2.getModel());
-        System.out.println(car2.gasCapacity);
-
-        System.out.printf(car2.getColor(), car2.getModel(), car2.gasCapacity);
-       
+        System.out.println(car2.gasCapacity);   
     }
 }
