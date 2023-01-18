@@ -14,9 +14,9 @@ public class Main {
 
         //Overloading Lesson
         System.out.println("Exercício quadrilátero");
-        Quadrilatero.area(3);
-        Quadrilatero.area(5d,5d);
-        Quadrilatero.area(7,8,9);
-        Quadrilatero.area(5f,5f);
+        QuadrilateroOverloading.area(3);
+        QuadrilateroOverloading.area(5d,5d);
+        QuadrilateroOverloading.area(7,8,9);
+        QuadrilateroOverloading.area(5f,5f);
     }   
 }
