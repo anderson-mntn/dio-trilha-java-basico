@@ -1,4 +1,4 @@
-package aulas_oo;
+package aulas_oo.class_01;
 /*
  * Learning Class in java
  */

@@ -1,4 +1,4 @@
-package aulas_oo;
+package aulas_oo.class_01;
 
 public class RodarAplicação {
     public static void main(String[] args) {
