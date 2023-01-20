@@ -21,7 +21,7 @@ public class Cats {
             add(new Cat("Nick", 5, "Calico"));
         }};
 
-        // Métodos de Ordenação do array
+        // Collections Sorting
         // Insertion Order
         System.out.println("------------------");
         System.out.println(" Insertion Order" + myCats);
@@ -33,7 +33,7 @@ public class Cats {
         System.out.println("------------------");
 
         // Alphabetical Order (Name)
-        // Teremos que implementar a interface: "implements Comparable<Cat>" em "Cat", e o public int compareTo(Cat cat)
+        // We need to implement the interface: "implements Comparable<Cat>" on "Cat", and the public int compareTo(Cat cat)
         // Then we use Collections.sort();
         Collections.sort(myCats);
         System.out.println("Alphabetical Order (Name): " + myCats);
@@ -52,9 +52,10 @@ public class Cats {
         System.out.println("Color Order: " + myCats);
         System.out.println("------------------");
 
-        // Sorting cats by all properties - Critério de Desempate
+        // Sorting cats by all properties - tiebreaker critery (Name-Age-Color)
         myCats.sort(new ComparatorAllProps());
-        System.out.println("Sorting by All Prop: " + myCats);
+        System.out.println("Sorting by All Properties: " + myCats);
+        System.out.println("------------------");
 
     }
 }
@@ -90,34 +91,34 @@ class Cat implements Comparable<Cat>{
 
     @Override
     public int compareTo(Cat cat){
-        return this.getName().compareToIgnoreCase(cat.getName()); //This comparation returns a int, -1, 0, 1.
+        return this.getName().compareToIgnoreCase(cat.getName()); // This comparation returns a int, -1, 0, 1.
     }        
 }
 
-class ComparatorAge implements Comparator<Cat>{ //class ComparatorAge com interface passando a class Cat, permite acessar props de Cat, ex: getAge();
+class ComparatorAge implements Comparator<Cat>{ // class ComparatorAge with the interface passing the class Cat, allow us to acess the pros of Cat, ex: getAge();
     @Override
     public int compare(Cat c1, Cat c2) {
         return Integer.compare(c1.getAge(), c2.getAge()); // returns -1, 0 and 1.
     }
-    // Agora basta usar new ComparatorAge() para ordenar no main;
+    // just need to use new ComparatorAge() on main, to sort it
 }
 
 class ComparatorColor implements Comparator<Cat>{
     @Override
     public int compare(Cat c1, Cat c2){
-        return c1.getColor().compareToIgnoreCase(c2.getColor()); //Passamos os valores a serem comparados, tambem retorna -1, 0 and 1 após a comparação.
+        return c1.getColor().compareToIgnoreCase(c2.getColor()); //Pass the values to be compared,  returns -1, 0 or 1 after the comparation.
     }  
 }
 
 class ComparatorAllProps implements Comparator<Cat>{
     @Override
     public int compare(Cat c1, Cat c2){
-        int name = c1.getName().compareToIgnoreCase(c2.getName()); // NAme é Primeiro critério de desempate
+        int name = c1.getName().compareToIgnoreCase(c2.getName()); // Name is the first tiebreaker
         if (name != 0) return name;
 
-        int color = c1.getColor().compareToIgnoreCase(c2.getColor()); // Color é Segundo critério de desempate
+        int color = c1.getColor().compareToIgnoreCase(c2.getColor()); // Color is the second tiebreaker
         if (color != 0) return color;
 
-        return Integer.compare(c1.getAge(), c2.getAge()); // Age é Terceiro critério de desempate
+        return Integer.compare(c1.getAge(), c2.getAge()); // Age is the last tiebreaker
     }
 }
