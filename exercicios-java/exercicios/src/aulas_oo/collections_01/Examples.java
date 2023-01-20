@@ -13,7 +13,7 @@ public class Examples {
         grades.add(4.5);
         System.out.println(grades);
         System.out.println(grades.get(2));
-        
+    
     /*
      * toString()
      * indexOf() - int *position*
