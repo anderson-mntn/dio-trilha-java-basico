@@ -4,9 +4,12 @@ package challenges;
  * Calculate and show the month that temperature was above of the average and it's name.
  */
 
+import java.time.temporal.TemporalQueries;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import javax.imageio.plugins.tiff.GeoTIFFTagSet;
 
 public class Exercise_01 {
     public static void main(String[] args) {
