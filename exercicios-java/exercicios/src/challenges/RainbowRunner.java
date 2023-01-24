@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -23,11 +24,11 @@ public class RainbowRunner {
 
         System.out.println("Tarefa 1: " + rainbow);
         System.out.println("Tarefa 2: " + rainbow.size() + " colors.");
-        System.out.println("Tarefa 3: Ordem Alfabética"); 
+        System.out.print("Tarefa 3: Ordem Alfabética"); 
         Set<String> rainbow3 = new TreeSet<>(rainbow);
         System.out.println(rainbow3);
 
-        System.out.println("Tarefa 4 - Ordem Inversa de insersão: ");
+        System.out.print("Tarefa 4 - Ordem Inversa de insersão: ");
         Set<String> rainbow4 = new LinkedHashSet<>( //preparar para mandar pra nova lista
             Arrays.asList("Violeta", "Anil", "Azul", "Verde","Amarelo","Laranja", "Vermelho")
         );
@@ -40,9 +41,17 @@ public class RainbowRunner {
             if(cor.startsWith("V") || cor.startsWith("v")) System.out.print(cor + " - ");
         }
         System.out.println("\n");
+        
+        System.out.print("Tarefa 6 - Remover cores começam com a letra" + " v: ");
+        Iterator<String> iterator2 = rainbow.iterator();
+        while(iterator2.hasNext()) {
+            if(iterator2.next().startsWith("V")) iterator2.remove();
+        }
+        System.out.println(rainbow);
 
-
-
+        System.out.print("Tarefa 7 - Limpando o conjunto: ");
+        rainbow.clear();
+        System.out.println(rainbow);
 
 
 
