@@ -40,7 +40,7 @@ public class Serie {
     // toString
     @Override
     public String toString() {
-        return "\n[name: " + name + ", gender: " + gender + ", epMinutes: " + epMinutes + "]";
+        return "\n[name: " + name + ", gender: " + gender + ", epMinutes: " + epMinutes + "m]";
     }
    
     
@@ -54,6 +54,15 @@ class ComparetorGender implements Comparator <Serie>{
         int gender = s1.getGender().compareTo(s2.getGender());
         if (gender != 0) return gender;
 
+        return -1;
+    }
+}
+
+class ComparetorDuration implements Comparator<Serie>{
+    @Override
+    public int compare(Serie s1, Serie s2){
+        int duration = s1.getEpMinutes().compareTo(s2.getEpMinutes());
+        if(duration != 0) return duration;
         return -1;
     }
 }
