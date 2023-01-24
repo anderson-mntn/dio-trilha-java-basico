@@ -1,4 +1,4 @@
-package aulas_oo.set;
+package aulas_oo.collections.set;
 
 import java.util.HashSet;
 import java.util.Set;

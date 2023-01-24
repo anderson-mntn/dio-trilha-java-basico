@@ -1,4 +1,4 @@
-package challenges;
+package aulas_oo.collections.set;
 /*
  * Write the average temperature of 6 months of a city.
  * Calculate and show the month that temperature was above of the average and it's name.

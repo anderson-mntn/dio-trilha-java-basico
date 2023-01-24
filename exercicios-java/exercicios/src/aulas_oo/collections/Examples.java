@@ -1,4 +1,4 @@
-package aulas_oo.collections_01;
+package aulas_oo.collections;
 
 import java.util.ArrayList;
 import java.util.List;

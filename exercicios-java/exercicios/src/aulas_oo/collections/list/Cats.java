@@ -1,4 +1,4 @@
-package aulas_oo.collections_02_cats;
+package aulas_oo.collections.list;
 
 /*
  * Learning Collections methods and manipulatings

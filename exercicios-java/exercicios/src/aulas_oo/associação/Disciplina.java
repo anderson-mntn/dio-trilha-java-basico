@@ -1,4 +1,4 @@
-package aulas_oo.associação_01;
+package aulas_oo.associação;
 
 //Associação de Agregação (oposto da composição, ela existe sem o outro)
 

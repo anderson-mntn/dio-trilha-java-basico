@@ -1,4 +1,4 @@
-package aulas_oo.associação_01;
+package aulas_oo.associação;
 
 //Associação comportalmental dependência
 

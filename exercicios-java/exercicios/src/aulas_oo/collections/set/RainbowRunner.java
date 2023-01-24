@@ -1,4 +1,4 @@
-package challenges;
+package aulas_oo.collections.set;
 
 import java.util.ArrayList;
 import java.util.Arrays;
