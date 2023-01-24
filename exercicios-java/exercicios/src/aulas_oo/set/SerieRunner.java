@@ -20,12 +20,12 @@ public class SerieRunner {
         Set<Serie> mySeries1 = new TreeSet<>(new ComparetorGender());
         System.out.println("--- Order By Gender ---");
         mySeries1.addAll(mySeries);
-        for (Serie serie : mySeries1) System.out.println(serie.getGender() + " - " + serie.getName() + " - " + serie.getEpMinutes());
+        for (Serie serie : mySeries1) System.out.println(serie.getGender() + " - " + serie.getName() + " - " + serie.getEpMinutes() + "m");
 
         Set<Serie> mySeries2 = new TreeSet<>(new ComparetorDuration());
         System.out.println("--- Order Ep Duration ---");
         mySeries2.addAll(mySeries);
-        for (Serie serie : mySeries2) System.out.println(serie.getEpMinutes() + " - " + serie.getName() + " - " + serie.getGender());
+        for (Serie serie : mySeries2) System.out.println(serie.getEpMinutes() + "m - " + serie.getName() + " - " + serie.getGender());
 
     }
         
